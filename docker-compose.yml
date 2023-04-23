@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  chat-app:
+    container_name: ${CONTAINER_NAME}
+    build: 
+      context: ./docker/local
+      dockerfile: Dockerfile
+    ports:
+      - "9000:8080"
+    env_file:
+      - .env
+    volumes:
+      - ./src:${LAMBDA_TASK_ROOT}
