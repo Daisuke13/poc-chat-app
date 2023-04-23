@@ -7,18 +7,25 @@ The image is compositions of our chat-gpt app.
 ![](./document/architecture.svg)
 
 ## [WIP]Development guide
-1. Building containers
+1. Register OpenAI
+2. Add API key
+3. Execute following command
+```
+cp .env.sample .env
+```
+4. Paste API key on .env
+5. Building containers
 ```
 docker-compose build --no-cache
 ```
-2. Start containers
+6. Start containers
 ```
 docker-compose up -d
 ```
-3. Throw request
+7. Throw request
 ```
-curl -d '{}' http://localhost:9000/2015-03-31/functions/function/invocations
+curl -d '{"question":"Who are you?"}' http://localhost:9000/2015-03-31/functions/function/invocations
 ```
 
 ## Reference
-- sample
+- OpenAI...https://platform.openai.com/docs/quickstart/build-your-application
