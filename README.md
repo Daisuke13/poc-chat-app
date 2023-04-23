@@ -29,3 +29,4 @@ curl -d '{"question":"Who are you?"}' http://localhost:9000/2015-03-31/functions
 
 ## Reference
 - OpenAI...https://platform.openai.com/docs/quickstart/build-your-application
+- Prompt Engineering...https://www.promptingguide.ai/jp
