@@ -1,5 +1,5 @@
 # [poc] chat-gpt app
-The objective is to understand how to use chat-gpt api and device a better architecture.
+The objective is to understand how to use chat-gpt api and devise a better architecture.
 
 ## Architecture
 The image is compositions of our chat-gpt app.
